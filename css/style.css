@@ -1,0 +1,410 @@
+/* Палитра:
+        основной цвет текста    #757575
+        доп цвет текста         #212121
+        цвет акцента            #2196F3
+        вспомагательный цвет    #FFFFFF
+        цвеи ссылок             #FFFFFF 60 % 
+   шрифты:
+        Roboto 400, 500, 700
+        Raleway 700
+*/
+
+/* =========== Основные стили =========== */
+:root {
+  --main-color: #757575;
+  --akcent-color: #2196f3;
+  --title-color: #212121;
+  --background-color: #ffffff;
+  --font-roboto: 'Roboto', sans-serif;
+  --font-raleway: 'Raleway', sans-serif;
+}
+body {
+  color: var(--main-color);
+  background-color: var(--background-color);
+  font-family: var(--font-roboto);
+}
+/* ========== Сброс css ============ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+}
+
+/* =========== End Основные стили =========== */
+
+/* =========== Шапка Сайта =========== */
+.main-header {
+  padding: 24px 0;
+  border-bottom: 1px solid #ececec;
+}
+
+.main-conteiner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-header-nanigation,
+.main-header-contacts {
+  display: flex;
+}
+
+.logo {
+  display: block;
+  font-family: var(--font-raleway);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+
+.logo-akcent {
+  color: var(--akcent-color);
+}
+
+.main-header-list {
+  display: flex;
+  margin-left: 93px;
+  align-items: center;
+}
+
+.main-header-items {
+  align-items: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-color);
+}
+
+.main-conteiner-list:not(:first-child) {
+  margin-left: 50px;
+}
+
+.main-header-items:hover,
+.main-header-items:focus {
+  color: var(--akcent-color);
+}
+
+.main-header-contacts {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.main-header-contacts-item {
+  color: var(--main-color);
+}
+
+.main-header-contacts-item:hover,
+.main-header-contacts-item:focus {
+  color: var(--akcent-color);
+}
+
+.main-conteiner-contacts:not(:first-child) {
+  margin-left: 50px;
+}
+
+/* =========== End Шапка Сайта =========== */
+/* ===========  Секция Hero =========== */
+.baner {
+  background: #2f303a;
+  padding: 200px 0;
+}
+.main-conteiner-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  color: var(--background-color);
+}
+
+.hero-button {
+  color: var(--background-color);
+  background: var(--akcent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 32px;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  color: var(--background-color);
+  background: #188ce8;
+  cursor: pointer;
+}
+/* ===========  End Секция Hero =========== */
+
+/* ===========  Секция особенности =========== */
+.company {
+  padding-top: 94px;
+}
+
+.company-profile {
+  display: flex;
+  /* justify-content: space-between; */
+  margin-left: -30px;
+}
+.company-profile-list {
+  margin-left: 30px;
+}
+
+.company-profile-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-color);
+}
+.company-profile-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  margin-top: 10px;
+}
+/* ===========  End Секция особенности =========== */
+/* ===========  Секция занятий =========== */
+.presentation {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.presintation-title {
+  margin-bottom: 50px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+.presintation-list-container {
+  display: flex;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+.presentation-item {
+  flex-basis: calc((100% - 90px) / 3);
+  margin-top: 30px;
+  margin-left: 30px;
+}
+/* ===========  End Секция занятий =========== */
+/* ===========  Секция команда =========== */
+.team {
+  background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.team-title {
+  margin-bottom: 50px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+.team-list {
+  display: flex;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.team-list-item {
+  flex-basis: calc((100% - 120px) / 4);
+  margin-left: 30px;
+  margin-top: 30px;
+  padding-bottom: 30px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-list-item-title {
+  margin-top: 30px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+.team-list-item-paragraf {
+  margin-top: 10px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+/* ===========  End Секция команда =========== */
+/* ===========  Секция футер =========== */
+.footer {
+  background: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-logo {
+  font-family: var(--font-raleway);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--background-color);
+}
+.footer-address {
+  margin-top: 20px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--background-color);
+}
+.footer-links {
+  display: block;
+}
+.footer-list {
+  margin-top: 9px;
+}
+.footer-link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--akcent-color);
+}
+/* ===========  End Секция футер =========== */
+/* ================== ПОРТФОЛИО =================== */
+/* ================== Навигация =================== */
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.portfolio-navigation-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.portfolio-navigation-items:not(:first-child) {
+  margin-left: 8px;
+}
+.portfolio-navigation-button {
+  display: block;
+  border: none;
+  padding: 6px 22px;
+  font-family: var(--font-roboto);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+.portfolio-navigation-button:hover,
+.portfolio-navigation-button:focus {
+  color: var(--background-color);
+  background: var(--akcent-color);
+  cursor: pointer;
+}
+/* ================== End Навигация =================== */
+/* ================== Проэкты =================== */
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+.projects-list-item {
+  flex-basis: calc((100% - 90px) / 3);
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.project-list-content {
+  padding: 20px 24px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  border-top: none;
+  box-sizing: border-box;
+}
+.projects-list-title {
+  margin-bottom: 4px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+}
+.projects-list-paragraf {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
+/* ================== End Проэкты =================== */
