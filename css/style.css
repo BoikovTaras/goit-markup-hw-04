@@ -138,12 +138,32 @@ img {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
+  height: 16px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
 .main-header-contacts-item {
+  display: inline-flex;
   color: var(--main-color);
+}
+
+.main-conteiner-contacts::before {
+  content: '';
+  display: inline-flex;
+  margin-right: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.icon-mail::before {
+  background-image: url(../images/svg/mail.svg);
+  width: 16px;
+  height: 12px;
+}
+.icon-phone::before {
+  background-image: url(../images/svg/smartphone.svg);
+  width: 12px;
+  height: 16px;
 }
 
 .main-header-contacts-item:hover,
@@ -208,11 +228,33 @@ img {
 
 .company-profile {
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   margin-left: -30px;
 }
 .company-profile-list {
   margin-left: 30px;
+}
+.company-profile-list::before {
+  content: '';
+  display: block;
+  background-color: #f5f4fa;
+  height: 120px;
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 4px;
+}
+.icon-antena::before {
+  background-image: url(../images/svg/antenna.svg);
+}
+.icon-clock::before {
+  background-image: url(../images/svg/clock.svg);
+}
+.icon-diagrama::before {
+  background-image: url(../images/svg/diagram.svg);
+}
+.icon-cosmonaut::before {
+  background-image: url(../images/svg/astronaut.svg);
 }
 
 .company-profile-title {
