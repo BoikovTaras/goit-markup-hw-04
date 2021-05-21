@@ -344,7 +344,7 @@ img {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -371,11 +371,58 @@ img {
   fill: #ffffff;
 }
 /* ===========  End Секция команда =========== */
+/* ============ Секция Клиенты======== */
+.client-title {
+  padding: 0 auto;
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+.our-clients {
+  padding: 94px 0;
+}
+.client-icon-list {
+  display: flex;
+  justify-content: space-between;
+}
+.client-icon-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.client-icon {
+  width: 106px;
+  height: 60px;
+  fill: #afb1b8;
+}
+.client-icon-items:hover,
+.client-icon-items:focus {
+  border: 1px solid var(--akcent-color);
+}
+.client-icon-items:hover .client-icon,
+.client-icon-items:focus .client-icon {
+  fill: var(--akcent-color);
+}
+
+/* ============End секция Клиенты========== */
+
 /* ===========  Секция футер =========== */
 .footer {
+  display: flex;
   background: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+.footer-container {
+  display: flex;
 }
 .footer-logo {
   font-family: var(--font-raleway);
@@ -395,6 +442,18 @@ img {
   letter-spacing: 0.03em;
   color: var(--background-color);
 }
+.footer-contacts-title {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer-contacts {
+  margin-left: 70px;
+}
 .footer-links {
   display: block;
 }
@@ -413,6 +472,28 @@ img {
 .footer-link:focus {
   color: var(--akcent-color);
 }
+
+.footer-social-list {
+  display: flex;
+}
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  height: 44px;
+  width: 44px;
+  background: rgba(255, 255, 255, 0.1);
+}
+.footer-social-item:not(:first-child) {
+  margin-left: 10px;
+}
+.footer-social-link .footer-social-list-icon {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+}
+
 /* ===========  End Секция футер =========== */
 /* ================== ПОРТФОЛИО =================== */
 /* ================== Навигация =================== */
