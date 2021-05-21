@@ -397,6 +397,7 @@ img {
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
+  cursor: pointer;
 }
 .client-icon {
   width: 106px;
@@ -493,6 +494,10 @@ img {
   height: 20px;
   fill: #ffffff;
 }
+.footer-social-link:focus,
+.footer-social-link:hover {
+  background-color: var(--akcent-color);
+}
 
 /* ===========  End Секция футер =========== */
 /* ================== ПОРТФОЛИО =================== */
@@ -529,6 +534,8 @@ img {
   color: var(--background-color);
   background: var(--akcent-color);
   cursor: pointer;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /* ================== End Навигация =================== */
 /* ================== Проэкты =================== */
@@ -543,6 +550,12 @@ img {
   margin-top: 30px;
   margin-left: 30px;
 }
+.projects-list-item:hover,
+.projects-list-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .project-list-content {
   padding: 20px 24px;
   background: #ffffff;
